@@ -1,0 +1,23 @@
+{
+  "name": "crowler-store",
+  "version": "^0.27.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravileal/crowler-store.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ravileal/crowler-store/issues"
+  },
+  "homepage": "https://github.com/ravileal/crowler-store#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
