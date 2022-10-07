@@ -2,8 +2,8 @@ const axios = require('axios');
 
 const url = 'https://api.neshastore.com/items';
 const MAX_PER_PAGE = 100;
-const MAX_PRICE = 0;
-const MIN_PRICE = 200;
+const MIN_PRICE = 0;
+const MAX_PRICE = 200;
 
 (async () => {
   const resume = {
