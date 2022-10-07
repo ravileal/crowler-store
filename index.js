@@ -16,7 +16,7 @@ const MAX_PER_PAGE = 100;
   };
 
   while (resume.meta.itemCount == MAX_PER_PAGE) {
-    const query = `page=${resume.meta.currentPage + 1}&limit=${MAX_PER_PAGE}&orderBy%5B%5D=3`;
+    const query = `page=${resume.meta.currentPage + 1}&limit=${MAX_PER_PAGE}&orderBy=2&priceFrom=0&priceTo=200&tradeLockedWithin=0&tradeLockedWithin=0`;
     const completedURL = `${url}?${query}`;
     console.log(completedURL);
     const {
