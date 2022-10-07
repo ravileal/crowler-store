@@ -2,6 +2,8 @@ const axios = require('axios');
 
 const url = 'https://api.neshastore.com/items';
 const MAX_PER_PAGE = 100;
+const MAX_PRICE = 0;
+const MIN_PRICE = 200;
 
 (async () => {
   const resume = {
@@ -16,7 +18,7 @@ const MAX_PER_PAGE = 100;
   };
 
   while (resume.meta.itemCount == MAX_PER_PAGE) {
-    const query = `page=${resume.meta.currentPage + 1}&limit=${MAX_PER_PAGE}&orderBy=2&priceFrom=0&priceTo=200&tradeLockedWithin=0&tradeLockedWithin=0`;
+    const query = `page=${resume.meta.currentPage + 1}&limit=${MAX_PER_PAGE}&orderBy=2&priceFrom=${MIN_PRICE}&priceTo=${MAX_PRICE}&tradeLockedWithin=0&tradeLockedWithin=0`;
     const completedURL = `${url}?${query}`;
     console.log(completedURL);
     const {
