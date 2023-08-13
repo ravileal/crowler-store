@@ -36,7 +36,7 @@ const MAX_PRICE = 200;
     resume.meta = meta;
   }
 
-  var mapAsc = [...resume.items.entries()].sort().reverse().slice(0, 1);
+  var mapAsc = [...resume.items.entries()].sort(([a], [b]) => a-b).reverse().slice(0, 1);
   console.log(mapAsc.map(([_, value]) => value));
   console.log(resume.meta);
 })();
